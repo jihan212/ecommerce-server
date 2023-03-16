@@ -1,0 +1,35 @@
+GET http://localhost:5000/api/products
+
+###
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "name":"Tops",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit saepe totam necessitatibus aliquam eos excepturi velit incidunt illo doloremque deserunt assumenda, dolor labore eligendi in, ducimus quidem tenetur, recusandae delectus.",
+    "price": 40,
+    "categoryId": 3,
+    "quantity": 20
+}
+###
+
+GET  http://localhost:5000/api/categories
+
+###
+POST http://localhost:5000/api/categories
+Content-Type: application/json
+
+{
+    "name":"hudai"
+}
+
+###
+DELETE http://localhost:5000/api/categories/5
+
+###
+PATCH  http://localhost:5000/api/categories/5
+Content-Type: application/json
+
+{
+    "name":"hudai22"
+}
